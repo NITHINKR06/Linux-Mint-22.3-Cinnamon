@@ -1,18 +1,11 @@
 # Linux Mint 22.3 Cinnamon — Complete Installation Guide
-> **Your System:** HP Victus, AMD Ryzen 5 5600H, 8GB RAM, Windows 11  
-> **Goal:** Replace CachyOS (170.18 GB + 4 GB EFI partitions) with Linux Mint  
-> **Keep:** Windows 11 completely untouched
-
 ---
 
 ## ⚠️ CRITICAL WARNINGS — READ FIRST
 
 - **NEVER** select "Erase disk and install Linux Mint" — this will wipe Windows too
 - **NEVER** touch these Windows partitions:
-  - 808 MB — Recovery Partition
-  - 128.13 GB (C:) — Windows system
-  - 793 MB — Windows Recovery
-  - 261 MB — Unallocated (Windows reserved)
+
 - **ALWAYS** use "Something else" (manual partitioning)
 - **NEVER** unplug USB during installation
 - **NEVER** force shutdown during installation
@@ -126,12 +119,8 @@ You will see a partition table. Here is what each partition is:
 
 | Size | What it is | Action |
 |------|-----------|--------|
-| 261 MB | Windows unallocated | ❌ Leave alone |
 | 170.18 GB | CachyOS root partition | ✅ Delete & reuse |
 | 4.00 GB | CachyOS EFI partition | ✅ Delete & reuse |
-| 808 MB | Windows Recovery | ❌ Leave alone |
-| 128.13 GB | Windows C: drive | ❌ Leave alone |
-| 793 MB | Windows Recovery | ❌ Leave alone |
 
 ### Delete CachyOS partitions
 
